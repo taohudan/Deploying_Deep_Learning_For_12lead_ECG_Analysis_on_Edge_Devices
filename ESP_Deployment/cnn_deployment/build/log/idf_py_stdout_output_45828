@@ -1,0 +1,2076 @@
+10,0.009301,0,0.9961
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xa (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403782e6
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1828
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xce8
+load:0x403cb700,len:0x2eb8
+entry 0x403c8918
+[0;32mI (26) boot: ESP-IDF v5.3.3-439-gc50e49dd0f 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 29 2025 15:13:55[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v0.2[0m
+[0;32mI (35) boot: efuse block revision: v1.3[0m
+[0;32mI (39) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=1a54ch (107852) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=0002a574 vaddr=3fc92500 size=05aa4h ( 23204) load[0m
+[0;32mI (130) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=2c710h (182032) map[0m
+[0;32mI (164) esp_image: segment 3: paddr=0005c738 vaddr=3fc97fa4 size=18fd0h (102352) load[0m
+[0;32mI (186) esp_image: segment 4: paddr=00075710 vaddr=40374000 size=0e4e4h ( 58596) load[0m
+[0;32mI (211) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (211) boot: Disabling RNG early entropy source...[0m
+[0;32mI (223) cpu_start: Multicore app[0m
+[0;32mI (232) cpu_start: Pro cpu start user code[0m
+[0;32mI (232) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (233) app_init: Application information:[0m
+[0;32mI (235) app_init: Project name:     cnn_deployment[0m
+[0;32mI (241) app_init: App version:      1[0m
+[0;32mI (245) app_init: Compile time:     May 29 2025 15:15:38[0m
+[0;32mI (251) app_init: ELF file SHA256:  64af3b143...[0m
+[0;32mI (256) app_init: ESP-IDF:          v5.3.3-439-gc50e49dd0f[0m
+[0;32mI (262) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (267) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (272) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (277) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (284) heap_init: At 3FCB7CB0 len 00031A60 (198 KiB): RAM[0m
+[0;32mI (290) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (296) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (303) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (310) spi_flash: detected chip: generic[0m
+[0;32mI (314) spi_flash: flash io: dio[0m
+[0;33mW (317) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (331) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (338) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (345) main_task: Started on CPU0[0m
+[0;32mI (355) main_task: Calling app_main()[0m
+Starting ECG Classification...
+[0;31mE (355) task_wdt: esp_task_wdt_init(515): TWDT already initialized[0m
+Predicting the data...
+Error: Could not create timing file
+Sample    1: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+1,0.009311,0,0.9961
+Sample    2: 0.009304 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+2,0.009304,0,0.9961
+Sample    3: 0.009310 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+3,0.009310,0,0.9961
+Sample    4: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+4,0.009302,0,0.9961
+Sample    5: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+5,0.009314,0,0.9961
+Sample    6: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+6,0.009305,0,0.9961
+Sample    7: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+7,0.009308,0,0.9961
+Sample    8: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+8,0.009308,0,0.9961
+Sample    9: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+9,0.009311,0,0.9961
+Sample   10: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+10,0.009302,0,0.9961
+Sample   11: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+11,0.009314,0,0.9961
+Sample   12: 0.009304 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+12,0.009304,0,0.9961
+Sample   13: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+13,0.009309,0,0.9961
+Sample   14: 0.009307 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+14,0.009307,0,0.9961
+Sample   15: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+15,0.009311,0,0.9961
+Sample   16: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+16,0.009302,0,0.9961
+Sample   17: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+17,0.009314,0,0.9961
+Sample   18: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+18,0.009305,0,0.9961
+Sample   19: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+19,0.009309,0,0.9961
+Sample   20: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+20,0.009309,0,0.9961
+Sample   21: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+21,0.009312,0,0.9961
+Sample   22: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+22,0.009302,0,0.9961
+Sample   23: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+23,0.009314,0,0.9961
+Sample   24: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+24,0.009305,0,0.9961
+Sample   25: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+25,0.009309,0,0.9961
+Sample   26: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+26,0.009308,0,0.9961
+Sample   27: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+27,0.009311,0,0.9961
+Sample   28: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+28,0.009302,0,0.9961
+Sample   29: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+29,0.009314,0,0.9961
+Sample   30: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+30,0.009305,0,0.9961
+Sample   31: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+31,0.009309,0,0.9961
+Sample   32: 0.009307 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+32,0.009307,0,0.9961
+Sample   33: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+33,0.009312,0,0.9961
+Sample   34: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+34,0.009302,0,0.9961
+Sample   35: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+35,0.009314,0,0.9961
+Sample   36: 0.009306 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+36,0.009306,0,0.9961
+Sample   37: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+37,0.009308,0,0.9961
+Sample   38: 0.009307 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+38,0.009307,0,0.9961
+Sample   39: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+39,0.009311,0,0.9961
+Sample   40: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+40,0.009303,0,0.9961
+Sample   41: 0.009315 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+41,0.009315,0,0.9961
+Sample   42: 0.009304 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+42,0.009304,0,0.9961
+Sample   43: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+43,0.009309,0,0.9961
+Sample   44: 0.009307 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+44,0.009307,0,0.9961
+Sample   45: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+45,0.009311,0,0.9961
+Sample   46: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+46,0.009303,0,0.9961
+Sample   47: 0.009313 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+47,0.009313,0,0.9961
+Sample   48: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+48,0.009305,0,0.9961
+Sample   49: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+49,0.009309,0,0.9961
+Sample   50: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+50,0.009308,0,0.9961
+Sample   51: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+51,0.009312,0,0.9961
+Sample   52: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+52,0.009302,0,0.9961
+Sample   53: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+53,0.009314,0,0.9961
+Sample   54: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+54,0.009305,0,0.9961
+Sample   55: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+55,0.009309,0,0.9961
+Sample   56: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+56,0.009309,0,0.9961
+Sample   57: 0.009310 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+57,0.009310,0,0.9961
+Sample   58: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+58,0.009303,0,0.9961
+Sample   59: 0.009313 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+59,0.009313,0,0.9961
+Sample   60: 0.009306 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+60,0.009306,0,0.9961
+Sample   61: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+61,0.009309,0,0.9961
+Sample   62: 0.009307 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+62,0.009307,0,0.9961
+Sample   63: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+63,0.009311,0,0.9961
+Sample   64: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+64,0.009302,0,0.9961
+Sample   65: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+65,0.009314,0,0.9961
+Sample   66: 0.009306 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+66,0.009306,0,0.9961
+Sample   67: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+67,0.009308,0,0.9961
+Sample   68: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+68,0.009308,0,0.9961
+Sample   69: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+69,0.009311,0,0.9961
+Sample   70: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+70,0.009303,0,0.9961
+Sample   71: 0.009315 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+71,0.009315,0,0.9961
+Sample   72: 0.009304 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+72,0.009304,0,0.9961
+Sample   73: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+73,0.009308,0,0.9961
+Sample   74: 0.009307 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+74,0.009307,0,0.9961
+Sample   75: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+75,0.009311,0,0.9961
+Sample   76: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+76,0.009303,0,0.9961
+Sample   77: 0.009313 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+77,0.009313,0,0.9961
+Sample   78: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+78,0.009305,0,0.9961
+Sample   79: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+79,0.009308,0,0.9961
+Sample   80: 0.009307 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+80,0.009307,0,0.9961
+Sample   81: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+81,0.009311,0,0.9961
+Sample   82: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+82,0.009302,0,0.9961
+Sample   83: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+83,0.009314,0,0.9961
+Sample   84: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+84,0.009305,0,0.9961
+Sample   85: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+85,0.009309,0,0.9961
+Sample   86: 0.009307 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+86,0.009307,0,0.9961
+Sample   87: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+87,0.009311,0,0.9961
+Sample   88: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+88,0.009302,0,0.9961
+Sample   89: 0.009313 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+89,0.009313,0,0.9961
+Sample   90: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+90,0.009305,0,0.9961
+Sample   91: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+91,0.009308,0,0.9961
+Sample   92: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+92,0.009308,0,0.9961
+Sample   93: 0.009310 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+93,0.009310,0,0.9961
+Sample   94: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+94,0.009303,0,0.9961
+Sample   95: 0.009313 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+95,0.009313,0,0.9961
+Sample   96: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+96,0.009305,0,0.9961
+Sample   97: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+97,0.009308,0,0.9961
+Sample   98: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+98,0.009308,0,0.9961
+Sample   99: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+99,0.009311,0,0.9961
+Sample  100: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+100,0.009303,0,0.9961
+Sample  101: 0.009315 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+101,0.009315,0,0.9961
+Sample  102: 0.009304 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+102,0.009304,0,0.9961
+Sample  103: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+103,0.009309,0,0.9961
+Sample  104: 0.009307 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+104,0.009307,0,0.9961
+Sample  105: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+105,0.009311,0,0.9961
+Sample  106: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+106,0.009303,0,0.9961
+Sample  107: 0.009313 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+107,0.009313,0,0.9961
+Sample  108: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+108,0.009305,0,0.9961
+Sample  109: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+109,0.009308,0,0.9961
+Sample  110: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+110,0.009308,0,0.9961
+Sample  111: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+111,0.009312,0,0.9961
+Sample  112: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+112,0.009302,0,0.9961
+Sample  113: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+113,0.009314,0,0.9961
+Sample  114: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+114,0.009305,0,0.9961
+Sample  115: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+115,0.009308,0,0.9961
+Sample  116: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+116,0.009308,0,0.9961
+Sample  117: 0.009310 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+117,0.009310,0,0.9961
+Sample  118: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+118,0.009303,0,0.9961
+Sample  119: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+119,0.009314,0,0.9961
+Sample  120: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+120,0.009305,0,0.9961
+Sample  121: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+121,0.009308,0,0.9961
+Sample  122: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9844
+122,0.009309,0,0.9844
+Sample  123: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+123,0.009311,0,0.9961
+Sample  124: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+124,0.009302,0,0.9961
+Sample  125: 0.009313 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+125,0.009313,0,0.9961
+Sample  126: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+126,0.009305,0,0.9961
+Sample  127: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9453
+127,0.009308,0,0.9453
+Sample  128: 0.009307 sec | Class: Hypertrophic Cardiomyopathy (HCM)   | Confidence: 0.8867
+128,0.009307,2,0.8867
+Sample  129: 0.009310 sec | Class: Hypertrophic Cardiomyopathy (HCM)   | Confidence: 0.9883
+129,0.009310,2,0.9883
+Sample  130: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+130,0.009302,0,0.9961
+Sample  131: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+131,0.009314,0,0.9961
+Sample  132: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+132,0.009305,0,0.9961
+Sample  133: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+133,0.009308,0,0.9961
+Sample  134: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+134,0.009308,0,0.9961
+Sample  135: 0.009310 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+135,0.009310,0,0.9961
+Sample  136: 0.009301 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+136,0.009301,0,0.9961
+Sample  137: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+137,0.009314,0,0.9961
+Sample  138: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+138,0.009305,0,0.9961
+Sample  139: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+139,0.009308,0,0.9961
+Sample  140: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+140,0.009308,0,0.9961
+Sample  141: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+141,0.009312,0,0.9961
+Sample  142: 0.009301 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+142,0.009301,0,0.9961
+Sample  143: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+143,0.009314,0,0.9961
+Sample  144: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+144,0.009305,0,0.9961
+Sample  145: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+145,0.009309,0,0.9961
+Sample  146: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+146,0.009309,0,0.9961
+Sample  147: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+147,0.009311,0,0.9961
+Sample  148: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+148,0.009303,0,0.9961
+Sample  149: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+149,0.009314,0,0.9961
+Sample  150: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+150,0.009305,0,0.9961
+Sample  151: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+151,0.009309,0,0.9961
+Sample  152: 0.009307 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+152,0.009307,0,0.9961
+Sample  153: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+153,0.009311,0,0.9961
+Sample  154: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+154,0.009302,0,0.9961
+Sample  155: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+155,0.009314,0,0.9961
+Sample  156: 0.009306 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+156,0.009306,0,0.9961
+Sample  157: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+157,0.009308,0,0.9961
+Sample  158: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+158,0.009308,0,0.9961
+Sample  159: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+159,0.009311,0,0.9961
+Sample  160: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+160,0.009303,0,0.9961
+Sample  161: 0.009315 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+161,0.009315,0,0.9961
+Sample  162: 0.009304 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+162,0.009304,0,0.9961
+Sample  163: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+163,0.009309,0,0.9961
+Sample  164: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+164,0.009308,0,0.9961
+Sample  165: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+165,0.009311,0,0.9961
+Sample  166: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+166,0.009303,0,0.9961
+Sample  167: 0.009313 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+167,0.009313,0,0.9961
+Sample  168: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+168,0.009305,0,0.9961
+Sample  169: 0.009307 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+169,0.009307,0,0.9961
+Sample  170: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+170,0.009308,0,0.9961
+Sample  171: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+171,0.009311,0,0.9961
+Sample  172: 0.009301 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+172,0.009301,0,0.9961
+Sample  173: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+173,0.009314,0,0.9961
+Sample  174: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+174,0.009305,0,0.9961
+Sample  175: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+175,0.009308,0,0.9961
+Sample  176: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+176,0.009308,0,0.9961
+Sample  177: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+177,0.009312,0,0.9961
+Sample  178: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+178,0.009303,0,0.9961
+Sample  179: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+179,0.009314,0,0.9961
+Sample  180: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+180,0.009305,0,0.9961
+Sample  181: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+181,0.009308,0,0.9961
+Sample  182: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+182,0.009308,0,0.9961
+Sample  183: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+183,0.009311,0,0.9961
+Sample  184: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+184,0.009302,0,0.9961
+Sample  185: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+185,0.009314,0,0.9961
+Sample  186: 0.009306 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+186,0.009306,0,0.9961
+Sample  187: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+187,0.009309,0,0.9961
+Sample  188: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+188,0.009308,0,0.9961
+Sample  189: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+189,0.009311,0,0.9961
+Sample  190: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+190,0.009303,0,0.9961
+Sample  191: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+191,0.009314,0,0.9961
+Sample  192: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+192,0.009305,0,0.9961
+Sample  193: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+193,0.009308,0,0.9961
+Sample  194: 0.009307 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+194,0.009307,0,0.9961
+Sample  195: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+195,0.009312,0,0.9961
+Sample  196: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+196,0.009303,0,0.9961
+Sample  197: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+197,0.009314,0,0.9961
+Sample  198: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+198,0.009305,0,0.9961
+Sample  199: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+199,0.009308,0,0.9961
+Sample  200: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+200,0.009308,0,0.9961
+Sample  201: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+201,0.009311,0,0.9961
+Sample  202: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+202,0.009302,0,0.9961
+Sample  203: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+203,0.009314,0,0.9961
+Sample  204: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+204,0.009303,0,0.9961
+Sample  205: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+205,0.009309,0,0.9961
+Sample  206: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+206,0.009308,0,0.9961
+Sample  207: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+207,0.009311,0,0.9961
+Sample  208: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+208,0.009302,0,0.9961
+Sample  209: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+209,0.009314,0,0.9961
+Sample  210: 0.009306 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+210,0.009306,0,0.9961
+Sample  211: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+211,0.009309,0,0.9961
+Sample  212: 0.009307 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+212,0.009307,0,0.9961
+Sample  213: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+213,0.009312,0,0.9961
+Sample  214: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+214,0.009303,0,0.9961
+Sample  215: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+215,0.009314,0,0.9961
+Sample  216: 0.009306 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+216,0.009306,0,0.9961
+Sample  217: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+217,0.009308,0,0.9961
+Sample  218: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+218,0.009308,0,0.9961
+Sample  219: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+219,0.009311,0,0.9961
+Sample  220: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+220,0.009303,0,0.9961
+Sample  221: 0.009315 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+221,0.009315,0,0.9961
+Sample  222: 0.009304 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+222,0.009304,0,0.9961
+Sample  223: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+223,0.009309,0,0.9961
+Sample  224: 0.009307 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+224,0.009307,0,0.9961
+Sample  225: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+225,0.009311,0,0.9961
+Sample  226: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+226,0.009303,0,0.9961
+Sample  227: 0.009313 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+227,0.009313,0,0.9961
+Sample  228: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+228,0.009305,0,0.9961
+Sample  229: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+229,0.009309,0,0.9961
+Sample  230: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+230,0.009308,0,0.9961
+Sample  231: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+231,0.009312,0,0.9961
+Sample  232: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+232,0.009302,0,0.9961
+Sample  233: 0.009315 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+233,0.009315,0,0.9961
+Sample  234: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+234,0.009305,0,0.9961
+Sample  235: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+235,0.009308,0,0.9961
+Sample  236: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+236,0.009308,0,0.9961
+Sample  237: 0.009310 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+237,0.009310,0,0.9961
+Sample  238: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+238,0.009303,0,0.9961
+Sample  239: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+239,0.009314,0,0.9961
+Sample  240: 0.009304 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+240,0.009304,0,0.9961
+Sample  241: 0.009310 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+241,0.009310,0,0.9961
+Sample  242: 0.009307 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+242,0.009307,0,0.9961
+Sample  243: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+243,0.009311,0,0.9961
+Sample  244: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+244,0.009302,0,0.9961
+Sample  245: 0.009315 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+245,0.009315,0,0.9961
+Sample  246: 0.009306 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+246,0.009306,0,0.9961
+Sample  247: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+247,0.009308,0,0.9961
+Sample  248: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+248,0.009308,0,0.9961
+Sample  249: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+249,0.009312,0,0.9961
+Sample  250: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+250,0.009302,0,0.9961
+Sample  251: 0.009315 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+251,0.009315,0,0.9961
+Sample  252: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+252,0.009305,0,0.9961
+Sample  253: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+253,0.009309,0,0.9961
+Sample  254: 0.009307 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+254,0.009307,0,0.9961
+Sample  255: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+255,0.009311,0,0.9961
+Sample  256: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+256,0.009303,0,0.9961
+Sample  257: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+257,0.009314,0,0.9961
+Sample  258: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+258,0.009305,0,0.9961
+Sample  259: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+259,0.009309,0,0.9961
+Sample  260: 0.009307 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+260,0.009307,0,0.9961
+Sample  261: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+261,0.009312,0,0.9961
+Sample  262: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+262,0.009302,0,0.9961
+Sample  263: 0.009315 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+263,0.009315,0,0.9961
+Sample  264: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+264,0.009305,0,0.9961
+Sample  265: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+265,0.009309,0,0.9961
+Sample  266: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+266,0.009309,0,0.9961
+Sample  267: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+267,0.009311,0,0.9961
+Sample  268: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+268,0.009302,0,0.9961
+Sample  269: 0.009313 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+269,0.009313,0,0.9961
+Sample  270: 0.009304 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+270,0.009304,0,0.9961
+Sample  271: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+271,0.009309,0,0.9961
+Sample  272: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+272,0.009308,0,0.9961
+Sample  273: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+273,0.009311,0,0.9961
+Sample  274: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+274,0.009303,0,0.9961
+Sample  275: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+275,0.009314,0,0.9961
+Sample  276: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+276,0.009305,0,0.9961
+Sample  277: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+277,0.009309,0,0.9961
+Sample  278: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+278,0.009308,0,0.9961
+Sample  279: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+279,0.009312,0,0.9961
+Sample  280: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+280,0.009303,0,0.9961
+Sample  281: 0.009315 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+281,0.009315,0,0.9961
+Sample  282: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+282,0.009305,0,0.9961
+Sample  283: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+283,0.009309,0,0.9961
+Sample  284: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+284,0.009308,0,0.9961
+Sample  285: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+285,0.009311,0,0.9961
+Sample  286: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+286,0.009302,0,0.9961
+Sample  287: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+287,0.009314,0,0.9961
+Sample  288: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+288,0.009305,0,0.9961
+Sample  289: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+289,0.009309,0,0.9961
+Sample  290: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+290,0.009308,0,0.9961
+Sample  291: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+291,0.009312,0,0.9961
+Sample  292: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+292,0.009302,0,0.9961
+Sample  293: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+293,0.009314,0,0.9961
+Sample  294: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+294,0.009305,0,0.9961
+Sample  295: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+295,0.009309,0,0.9961
+Sample  296: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+296,0.009309,0,0.9961
+Sample  297: 0.009310 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+297,0.009310,0,0.9961
+Sample  298: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+298,0.009303,0,0.9961
+Sample  299: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+299,0.009314,0,0.9961
+Sample  300: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+300,0.009305,0,0.9961
+Sample  301: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+301,0.009309,0,0.9961
+Sample  302: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+302,0.009308,0,0.9961
+Sample  303: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+303,0.009312,0,0.9961
+Sample  304: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+304,0.009303,0,0.9961
+Sample  305: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+305,0.009314,0,0.9961
+Sample  306: 0.009306 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+306,0.009306,0,0.9961
+Sample  307: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+307,0.009309,0,0.9961
+Sample  308: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+308,0.009309,0,0.9961
+Sample  309: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+309,0.009311,0,0.9961
+Sample  310: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9844
+310,0.009303,0,0.9844
+Sample  311: 0.009315 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+311,0.009315,0,0.9961
+Sample  312: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+312,0.009305,0,0.9961
+Sample  313: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+313,0.009308,0,0.9961
+Sample  314: 0.009307 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+314,0.009307,0,0.9961
+Sample  315: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.8320
+315,0.009309,0,0.8320
+Sample  316: 0.009300 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+316,0.009300,0,0.9961
+Sample  317: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+317,0.009314,0,0.9961
+Sample  318: 0.009304 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+318,0.009304,0,0.9961
+Sample  319: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+319,0.009308,0,0.9961
+Sample  320: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+320,0.009308,0,0.9961
+Sample  321: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+321,0.009312,0,0.9961
+Sample  322: 0.009301 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+322,0.009301,0,0.9961
+Sample  323: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+323,0.009312,0,0.9961
+Sample  324: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+324,0.009305,0,0.9961
+Sample  325: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+325,0.009309,0,0.9961
+Sample  326: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+326,0.009308,0,0.9961
+Sample  327: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+327,0.009311,0,0.9961
+Sample  328: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+328,0.009303,0,0.9961
+Sample  329: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+329,0.009314,0,0.9961
+Sample  330: 0.009306 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+330,0.009306,0,0.9961
+Sample  331: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+331,0.009309,0,0.9961
+Sample  332: 0.009307 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+332,0.009307,0,0.9961
+Sample  333: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+333,0.009311,0,0.9961
+Sample  334: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+334,0.009302,0,0.9961
+Sample  335: 0.009315 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+335,0.009315,0,0.9961
+Sample  336: 0.009306 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+336,0.009306,0,0.9961
+Sample  337: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+337,0.009308,0,0.9961
+Sample  338: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+338,0.009308,0,0.9961
+Sample  339: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+339,0.009312,0,0.9961
+Sample  340: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+340,0.009302,0,0.9961
+Sample  341: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+341,0.009314,0,0.9961
+Sample  342: 0.009304 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+342,0.009304,0,0.9961
+Sample  343: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+343,0.009309,0,0.9961
+Sample  344: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+344,0.009308,0,0.9961
+Sample  345: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+345,0.009312,0,0.9961
+Sample  346: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+346,0.009303,0,0.9961
+Sample  347: 0.009313 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+347,0.009313,0,0.9961
+Sample  348: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+348,0.009305,0,0.9961
+Sample  349: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+349,0.009308,0,0.9961
+Sample  350: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+350,0.009309,0,0.9961
+Sample  351: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+351,0.009312,0,0.9961
+Sample  352: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+352,0.009302,0,0.9961
+Sample  353: 0.009315 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+353,0.009315,0,0.9961
+Sample  354: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+354,0.009305,0,0.9961
+Sample  355: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+355,0.009308,0,0.9961
+Sample  356: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+356,0.009308,0,0.9961
+Sample  357: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+357,0.009312,0,0.9961
+Sample  358: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+358,0.009302,0,0.9961
+Sample  359: 0.009315 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+359,0.009315,0,0.9961
+Sample  360: 0.009306 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+360,0.009306,0,0.9961
+Sample  361: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+361,0.009309,0,0.9961
+Sample  362: 0.009307 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+362,0.009307,0,0.9961
+Sample  363: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+363,0.009311,0,0.9961
+Sample  364: 0.009304 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+364,0.009304,0,0.9961
+Sample  365: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+365,0.009314,0,0.9961
+Sample  366: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+366,0.009305,0,0.9961
+Sample  367: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+367,0.009309,0,0.9961
+Sample  368: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+368,0.009308,0,0.9961
+Sample  369: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+369,0.009311,0,0.9961
+Sample  370: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+370,0.009302,0,0.9961
+Sample  371: 0.009313 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+371,0.009313,0,0.9961
+Sample  372: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+372,0.009305,0,0.9961
+Sample  373: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+373,0.009309,0,0.9961
+Sample  374: 0.009307 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+374,0.009307,0,0.9961
+Sample  375: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+375,0.009312,0,0.9961
+Sample  376: 0.009301 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+376,0.009301,0,0.9961
+Sample  377: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+377,0.009314,0,0.9961
+Sample  378: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+378,0.009305,0,0.9961
+Sample  379: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+379,0.009309,0,0.9961
+Sample  380: 0.009307 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+380,0.009307,0,0.9961
+Sample  381: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+381,0.009311,0,0.9961
+Sample  382: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+382,0.009302,0,0.9961
+Sample  383: 0.009315 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+383,0.009315,0,0.9961
+Sample  384: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+384,0.009305,0,0.9961
+Sample  385: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+385,0.009309,0,0.9961
+Sample  386: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+386,0.009309,0,0.9961
+Sample  387: 0.009310 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+387,0.009310,0,0.9961
+Sample  388: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+388,0.009302,0,0.9961
+Sample  389: 0.009315 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+389,0.009315,0,0.9961
+Sample  390: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+390,0.009305,0,0.9961
+Sample  391: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+391,0.009308,0,0.9961
+Sample  392: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+392,0.009308,0,0.9961
+Sample  393: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+393,0.009312,0,0.9961
+Sample  394: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+394,0.009302,0,0.9961
+Sample  395: 0.009315 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+395,0.009315,0,0.9961
+Sample  396: 0.009306 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+396,0.009306,0,0.9961
+Sample  397: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+397,0.009308,0,0.9961
+Sample  398: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+398,0.009308,0,0.9961
+Sample  399: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+399,0.009311,0,0.9961
+Sample  400: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+400,0.009303,0,0.9961
+Sample  401: 0.009315 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+401,0.009315,0,0.9961
+Sample  402: 0.009304 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+402,0.009304,0,0.9961
+Sample  403: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+403,0.009308,0,0.9961
+Sample  404: 0.009307 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+404,0.009307,0,0.9961
+Sample  405: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+405,0.009312,0,0.9961
+Sample  406: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+406,0.009303,0,0.9961
+Sample  407: 0.009313 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+407,0.009313,0,0.9961
+Sample  408: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+408,0.009305,0,0.9961
+Sample  409: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+409,0.009309,0,0.9961
+Sample  410: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+410,0.009308,0,0.9961
+Sample  411: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+411,0.009311,0,0.9961
+Sample  412: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+412,0.009302,0,0.9961
+Sample  413: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+413,0.009314,0,0.9961
+Sample  414: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+414,0.009305,0,0.9961
+Sample  415: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+415,0.009309,0,0.9961
+Sample  416: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+416,0.009309,0,0.9961
+Sample  417: 0.009310 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+417,0.009310,0,0.9961
+Sample  418: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+418,0.009302,0,0.9961
+Sample  419: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+419,0.009314,0,0.9961
+Sample  420: 0.009306 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+420,0.009306,0,0.9961
+Sample  421: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+421,0.009309,0,0.9961
+Sample  422: 0.009307 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+422,0.009307,0,0.9961
+Sample  423: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+423,0.009312,0,0.9961
+Sample  424: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+424,0.009303,0,0.9961
+Sample  425: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+425,0.009314,0,0.9961
+Sample  426: 0.009306 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+426,0.009306,0,0.9961
+Sample  427: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+427,0.009308,0,0.9961
+Sample  428: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+428,0.009308,0,0.9961
+Sample  429: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+429,0.009312,0,0.9961
+Sample  430: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+430,0.009302,0,0.9961
+Sample  431: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+431,0.009314,0,0.9961
+Sample  432: 0.009304 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+432,0.009304,0,0.9961
+Sample  433: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+433,0.009309,0,0.9961
+Sample  434: 0.009307 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+434,0.009307,0,0.9961
+Sample  435: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+435,0.009311,0,0.9961
+Sample  436: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+436,0.009303,0,0.9961
+Sample  437: 0.009313 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+437,0.009313,0,0.9961
+Sample  438: 0.009306 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+438,0.009306,0,0.9961
+Sample  439: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+439,0.009309,0,0.9961
+Sample  440: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+440,0.009308,0,0.9961
+Sample  441: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+441,0.009312,0,0.9961
+Sample  442: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+442,0.009302,0,0.9961
+Sample  443: 0.009315 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+443,0.009315,0,0.9961
+Sample  444: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+444,0.009305,0,0.9961
+Sample  445: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+445,0.009309,0,0.9961
+Sample  446: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+446,0.009309,0,0.9961
+Sample  447: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+447,0.009311,0,0.9961
+Sample  448: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+448,0.009303,0,0.9961
+Sample  449: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+449,0.009314,0,0.9961
+Sample  450: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+450,0.009305,0,0.9961
+Sample  451: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+451,0.009309,0,0.9961
+Sample  452: 0.009307 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+452,0.009307,0,0.9961
+Sample  453: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+453,0.009312,0,0.9961
+Sample  454: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+454,0.009302,0,0.9961
+Sample  455: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+455,0.009314,0,0.9961
+Sample  456: 0.009306 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+456,0.009306,0,0.9961
+Sample  457: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+457,0.009308,0,0.9961
+Sample  458: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+458,0.009308,0,0.9961
+Sample  459: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+459,0.009311,0,0.9961
+Sample  460: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+460,0.009302,0,0.9961
+Sample  461: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+461,0.009314,0,0.9961
+Sample  462: 0.009304 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+462,0.009304,0,0.9961
+Sample  463: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+463,0.009308,0,0.9961
+Sample  464: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+464,0.009309,0,0.9961
+Sample  465: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+465,0.009311,0,0.9961
+Sample  466: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+466,0.009302,0,0.9961
+Sample  467: 0.009313 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+467,0.009313,0,0.9961
+Sample  468: 0.009306 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+468,0.009306,0,0.9961
+Sample  469: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+469,0.009309,0,0.9961
+Sample  470: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+470,0.009309,0,0.9961
+Sample  471: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+471,0.009312,0,0.9961
+Sample  472: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+472,0.009303,0,0.9961
+Sample  473: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+473,0.009314,0,0.9961
+Sample  474: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+474,0.009305,0,0.9961
+Sample  475: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+475,0.009309,0,0.9961
+Sample  476: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+476,0.009308,0,0.9961
+Sample  477: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+477,0.009312,0,0.9961
+Sample  478: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+478,0.009303,0,0.9961
+Sample  479: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+479,0.009314,0,0.9961
+Sample  480: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+480,0.009305,0,0.9961
+Sample  481: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+481,0.009309,0,0.9961
+Sample  482: 0.009307 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+482,0.009307,0,0.9961
+Sample  483: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+483,0.009311,0,0.9961
+Sample  484: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+484,0.009303,0,0.9961
+Sample  485: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+485,0.009314,0,0.9961
+Sample  486: 0.009306 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+486,0.009306,0,0.9961
+Sample  487: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+487,0.009308,0,0.9961
+Sample  488: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+488,0.009308,0,0.9961
+Sample  489: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+489,0.009311,0,0.9961
+Sample  490: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+490,0.009302,0,0.9961
+Sample  491: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+491,0.009314,0,0.9961
+Sample  492: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+492,0.009305,0,0.9961
+Sample  493: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+493,0.009309,0,0.9961
+Sample  494: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+494,0.009308,0,0.9961
+Sample  495: 0.009310 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+495,0.009310,0,0.9961
+Sample  496: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+496,0.009302,0,0.9961
+Sample  497: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+497,0.009314,0,0.9961
+Sample  498: 0.009306 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+498,0.009306,0,0.9961
+Sample  499: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+499,0.009308,0,0.9961
+Sample  500: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9844
+500,0.009308,0,0.9844
+Sample  501: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+501,0.009311,0,0.9961
+Sample  502: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+502,0.009302,0,0.9961
+Sample  503: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+503,0.009314,0,0.9961
+Sample  504: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+504,0.009305,0,0.9961
+Sample  505: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.8477
+505,0.009305,0,0.8477
+Sample  506: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+506,0.009308,0,0.9961
+Sample  507: 0.009311 sec | Class: Hypertrophic Cardiomyopathy (HCM)   | Confidence: 0.9961
+507,0.009311,2,0.9961
+Sample  508: 0.009301 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+508,0.009301,0,0.9961
+Sample  509: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+509,0.009314,0,0.9961
+Sample  510: 0.009307 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+510,0.009307,0,0.9961
+Sample  511: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+511,0.009309,0,0.9961
+Sample  512: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+512,0.009308,0,0.9961
+Sample  513: 0.009310 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+513,0.009310,0,0.9961
+Sample  514: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+514,0.009302,0,0.9961
+Sample  515: 0.009317 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+515,0.009317,0,0.9961
+Sample  516: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+516,0.009305,0,0.9961
+Sample  517: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+517,0.009308,0,0.9961
+Sample  518: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+518,0.009308,0,0.9961
+Sample  519: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+519,0.009311,0,0.9961
+Sample  520: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+520,0.009302,0,0.9961
+Sample  521: 0.009315 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+521,0.009315,0,0.9961
+Sample  522: 0.009304 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+522,0.009304,0,0.9961
+Sample  523: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+523,0.009309,0,0.9961
+Sample  524: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+524,0.009308,0,0.9961
+Sample  525: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+525,0.009311,0,0.9961
+Sample  526: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+526,0.009303,0,0.9961
+Sample  527: 0.009313 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+527,0.009313,0,0.9961
+Sample  528: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+528,0.009305,0,0.9961
+Sample  529: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+529,0.009309,0,0.9961
+Sample  530: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+530,0.009308,0,0.9961
+Sample  531: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+531,0.009312,0,0.9961
+Sample  532: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+532,0.009302,0,0.9961
+Sample  533: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+533,0.009314,0,0.9961
+Sample  534: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+534,0.009305,0,0.9961
+Sample  535: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+535,0.009309,0,0.9961
+Sample  536: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+536,0.009308,0,0.9961
+Sample  537: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+537,0.009311,0,0.9961
+Sample  538: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+538,0.009303,0,0.9961
+Sample  539: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+539,0.009314,0,0.9961
+Sample  540: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+540,0.009305,0,0.9961
+Sample  541: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+541,0.009309,0,0.9961
+Sample  542: 0.009307 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+542,0.009307,0,0.9961
+Sample  543: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+543,0.009312,0,0.9961
+Sample  544: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+544,0.009303,0,0.9961
+Sample  545: 0.009315 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+545,0.009315,0,0.9961
+Sample  546: 0.009306 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+546,0.009306,0,0.9961
+Sample  547: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+547,0.009308,0,0.9961
+Sample  548: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+548,0.009308,0,0.9961
+Sample  549: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+549,0.009311,0,0.9961
+Sample  550: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+550,0.009302,0,0.9961
+Sample  551: 0.009315 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+551,0.009315,0,0.9961
+Sample  552: 0.009304 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+552,0.009304,0,0.9961
+Sample  553: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+553,0.009309,0,0.9961
+Sample  554: 0.009307 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+554,0.009307,0,0.9961
+Sample  555: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+555,0.009311,0,0.9961
+Sample  556: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+556,0.009303,0,0.9961
+Sample  557: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+557,0.009314,0,0.9961
+Sample  558: 0.009306 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+558,0.009306,0,0.9961
+Sample  559: 0.009310 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+559,0.009310,0,0.9961
+Sample  560: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+560,0.009308,0,0.9961
+Sample  561: 0.009310 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+561,0.009310,0,0.9961
+Sample  562: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+562,0.009303,0,0.9961
+Sample  563: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+563,0.009314,0,0.9961
+Sample  564: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+564,0.009305,0,0.9961
+Sample  565: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+565,0.009308,0,0.9961
+Sample  566: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+566,0.009308,0,0.9961
+Sample  567: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+567,0.009311,0,0.9961
+Sample  568: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+568,0.009303,0,0.9961
+Sample  569: 0.009313 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+569,0.009313,0,0.9961
+Sample  570: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+570,0.009305,0,0.9961
+Sample  571: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+571,0.009308,0,0.9961
+Sample  572: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+572,0.009308,0,0.9961
+Sample  573: 0.009310 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+573,0.009310,0,0.9961
+Sample  574: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+574,0.009302,0,0.9961
+Sample  575: 0.009313 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+575,0.009313,0,0.9961
+Sample  576: 0.009306 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+576,0.009306,0,0.9961
+Sample  577: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+577,0.009309,0,0.9961
+Sample  578: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+578,0.009308,0,0.9961
+Sample  579: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+579,0.009311,0,0.9961
+Sample  580: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+580,0.009302,0,0.9961
+Sample  581: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+581,0.009314,0,0.9961
+Sample  582: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+582,0.009305,0,0.9961
+Sample  583: 0.009310 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+583,0.009310,0,0.9961
+Sample  584: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+584,0.009308,0,0.9961
+Sample  585: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+585,0.009311,0,0.9961
+Sample  586: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+586,0.009303,0,0.9961
+Sample  587: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+587,0.009314,0,0.9961
+Sample  588: 0.009306 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+588,0.009306,0,0.9961
+Sample  589: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+589,0.009308,0,0.9961
+Sample  590: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+590,0.009308,0,0.9961
+Sample  591: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+591,0.009312,0,0.9961
+Sample  592: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+592,0.009302,0,0.9961
+Sample  593: 0.009315 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+593,0.009315,0,0.9961
+Sample  594: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+594,0.009305,0,0.9961
+Sample  595: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+595,0.009309,0,0.9961
+Sample  596: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+596,0.009309,0,0.9961
+Sample  597: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+597,0.009311,0,0.9961
+Sample  598: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+598,0.009303,0,0.9961
+Sample  599: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+599,0.009314,0,0.9961
+Sample  600: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+600,0.009305,0,0.9961
+Sample  601: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+601,0.009309,0,0.9961
+Sample  602: 0.009307 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+602,0.009307,0,0.9961
+Sample  603: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+603,0.009311,0,0.9961
+Sample  604: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+604,0.009302,0,0.9961
+Sample  605: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+605,0.009314,0,0.9961
+Sample  606: 0.009306 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+606,0.009306,0,0.9961
+Sample  607: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+607,0.009308,0,0.9961
+Sample  608: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+608,0.009308,0,0.9961
+Sample  609: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+609,0.009311,0,0.9961
+Sample  610: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+610,0.009303,0,0.9961
+Sample  611: 0.009315 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+611,0.009315,0,0.9961
+Sample  612: 0.009304 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+612,0.009304,0,0.9961
+Sample  613: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+613,0.009309,0,0.9961
+Sample  614: 0.009307 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+614,0.009307,0,0.9961
+Sample  615: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+615,0.009311,0,0.9961
+Sample  616: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+616,0.009303,0,0.9961
+Sample  617: 0.009313 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+617,0.009313,0,0.9961
+Sample  618: 0.009306 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+618,0.009306,0,0.9961
+Sample  619: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+619,0.009309,0,0.9961
+Sample  620: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+620,0.009308,0,0.9961
+Sample  621: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+621,0.009312,0,0.9961
+Sample  622: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+622,0.009302,0,0.9961
+Sample  623: 0.009315 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+623,0.009315,0,0.9961
+Sample  624: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+624,0.009305,0,0.9961
+Sample  625: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+625,0.009309,0,0.9961
+Sample  626: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+626,0.009308,0,0.9961
+Sample  627: 0.009310 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+627,0.009310,0,0.9961
+Sample  628: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+628,0.009303,0,0.9961
+Sample  629: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+629,0.009314,0,0.9961
+Sample  630: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+630,0.009305,0,0.9961
+Sample  631: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+631,0.009309,0,0.9961
+Sample  632: 0.009307 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+632,0.009307,0,0.9961
+Sample  633: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+633,0.009312,0,0.9961
+Sample  634: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+634,0.009302,0,0.9961
+Sample  635: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+635,0.009314,0,0.9961
+Sample  636: 0.009306 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+636,0.009306,0,0.9961
+Sample  637: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+637,0.009308,0,0.9961
+Sample  638: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+638,0.009308,0,0.9961
+Sample  639: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+639,0.009311,0,0.9961
+Sample  640: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+640,0.009302,0,0.9961
+Sample  641: 0.009315 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+641,0.009315,0,0.9961
+Sample  642: 0.009304 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+642,0.009304,0,0.9961
+Sample  643: 0.009310 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+643,0.009310,0,0.9961
+Sample  644: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+644,0.009308,0,0.9961
+Sample  645: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+645,0.009311,0,0.9961
+Sample  646: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+646,0.009303,0,0.9961
+Sample  647: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+647,0.009314,0,0.9961
+Sample  648: 0.009304 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+648,0.009304,0,0.9961
+Sample  649: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+649,0.009309,0,0.9961
+Sample  650: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+650,0.009308,0,0.9961
+Sample  651: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+651,0.009311,0,0.9961
+Sample  652: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+652,0.009303,0,0.9961
+Sample  653: 0.009315 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+653,0.009315,0,0.9961
+Sample  654: 0.009306 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+654,0.009306,0,0.9961
+Sample  655: 0.009310 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+655,0.009310,0,0.9961
+Sample  656: 0.009307 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+656,0.009307,0,0.9961
+Sample  657: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+657,0.009311,0,0.9961
+Sample  658: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+658,0.009303,0,0.9961
+Sample  659: 0.009317 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+659,0.009317,0,0.9961
+Sample  660: 0.009307 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+660,0.009307,0,0.9961
+Sample  661: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+661,0.009311,0,0.9961
+Sample  662: 0.009310 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+662,0.009310,0,0.9961
+Sample  663: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+663,0.009308,0,0.9961
+Sample  664: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+664,0.009305,0,0.9961
+Sample  665: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+665,0.009314,0,0.9961
+Sample  666: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+666,0.009305,0,0.9961
+Sample  667: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+667,0.009308,0,0.9961
+Sample  668: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+668,0.009308,0,0.9961
+Sample  669: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+669,0.009312,0,0.9961
+Sample  670: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+670,0.009302,0,0.9961
+Sample  671: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+671,0.009314,0,0.9961
+Sample  672: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+672,0.009305,0,0.9961
+Sample  673: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+673,0.009309,0,0.9961
+Sample  674: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+674,0.009308,0,0.9961
+Sample  675: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+675,0.009311,0,0.9961
+Sample  676: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+676,0.009303,0,0.9961
+Sample  677: 0.009313 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+677,0.009313,0,0.9961
+Sample  678: 0.009307 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+678,0.009307,0,0.9961
+Sample  679: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+679,0.009308,0,0.9961
+Sample  680: 0.009310 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+680,0.009310,0,0.9961
+Sample  681: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+681,0.009309,0,0.9961
+Sample  682: 0.009307 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+682,0.009307,0,0.9961
+Sample  683: 0.009313 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+683,0.009313,0,0.9961
+Sample  684: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+684,0.009305,0,0.9961
+Sample  685: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+685,0.009309,0,0.9961
+Sample  686: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+686,0.009308,0,0.9961
+Sample  687: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+687,0.009311,0,0.9961
+Sample  688: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+688,0.009303,0,0.9961
+Sample  689: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+689,0.009314,0,0.9961
+Sample  690: 0.009306 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+690,0.009306,0,0.9961
+Sample  691: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9844
+691,0.009309,0,0.9844
+Sample  692: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+692,0.009308,0,0.9961
+Sample  693: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+693,0.009312,0,0.9961
+Sample  694: 0.009301 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+694,0.009301,0,0.9961
+Sample  695: 0.009315 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+695,0.009315,0,0.9961
+Sample  696: 0.009304 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9922
+696,0.009304,0,0.9922
+Sample  697: 0.009307 sec | Class: Hypertrophic Cardiomyopathy (HCM)   | Confidence: 0.5273
+697,0.009307,2,0.5273
+Sample  698: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.6953
+698,0.009308,0,0.6953
+Sample  699: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+699,0.009311,0,0.9961
+Sample  700: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+700,0.009302,0,0.9961
+Sample  701: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+701,0.009314,0,0.9961
+Sample  702: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+702,0.009305,0,0.9961
+Sample  703: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+703,0.009308,0,0.9961
+Sample  704: 0.009307 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+704,0.009307,0,0.9961
+Sample  705: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+705,0.009312,0,0.9961
+Sample  706: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+706,0.009302,0,0.9961
+Sample  707: 0.009313 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+707,0.009313,0,0.9961
+Sample  708: 0.009306 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+708,0.009306,0,0.9961
+Sample  709: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+709,0.009309,0,0.9961
+Sample  710: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+710,0.009308,0,0.9961
+Sample  711: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+711,0.009312,0,0.9961
+Sample  712: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+712,0.009302,0,0.9961
+Sample  713: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+713,0.009314,0,0.9961
+Sample  714: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+714,0.009305,0,0.9961
+Sample  715: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+715,0.009309,0,0.9961
+Sample  716: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+716,0.009309,0,0.9961
+Sample  717: 0.009310 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+717,0.009310,0,0.9961
+Sample  718: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+718,0.009303,0,0.9961
+Sample  719: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+719,0.009314,0,0.9961
+Sample  720: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+720,0.009305,0,0.9961
+Sample  721: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+721,0.009309,0,0.9961
+Sample  722: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+722,0.009308,0,0.9961
+Sample  723: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+723,0.009312,0,0.9961
+Sample  724: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+724,0.009302,0,0.9961
+Sample  725: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+725,0.009314,0,0.9961
+Sample  726: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+726,0.009305,0,0.9961
+Sample  727: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+727,0.009308,0,0.9961
+Sample  728: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+728,0.009309,0,0.9961
+Sample  729: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+729,0.009312,0,0.9961
+Sample  730: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+730,0.009302,0,0.9961
+Sample  731: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+731,0.009314,0,0.9961
+Sample  732: 0.009304 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+732,0.009304,0,0.9961
+Sample  733: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+733,0.009309,0,0.9961
+Sample  734: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+734,0.009308,0,0.9961
+Sample  735: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+735,0.009312,0,0.9961
+Sample  736: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+736,0.009302,0,0.9961
+Sample  737: 0.009313 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+737,0.009313,0,0.9961
+Sample  738: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+738,0.009305,0,0.9961
+Sample  739: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+739,0.009308,0,0.9961
+Sample  740: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+740,0.009308,0,0.9961
+Sample  741: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+741,0.009311,0,0.9961
+Sample  742: 0.009301 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+742,0.009301,0,0.9961
+Sample  743: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+743,0.009314,0,0.9961
+Sample  744: 0.009306 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+744,0.009306,0,0.9961
+Sample  745: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+745,0.009308,0,0.9961
+Sample  746: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+746,0.009308,0,0.9961
+Sample  747: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+747,0.009311,0,0.9961
+Sample  748: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+748,0.009303,0,0.9961
+Sample  749: 0.009313 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+749,0.009313,0,0.9961
+Sample  750: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+750,0.009305,0,0.9961
+Sample  751: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+751,0.009308,0,0.9961
+Sample  752: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+752,0.009308,0,0.9961
+Sample  753: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+753,0.009312,0,0.9961
+Sample  754: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+754,0.009302,0,0.9961
+Sample  755: 0.009313 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+755,0.009313,0,0.9961
+Sample  756: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+756,0.009305,0,0.9961
+Sample  757: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+757,0.009308,0,0.9961
+Sample  758: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+758,0.009308,0,0.9961
+Sample  759: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+759,0.009311,0,0.9961
+Sample  760: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+760,0.009303,0,0.9961
+Sample  761: 0.009315 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+761,0.009315,0,0.9961
+Sample  762: 0.009304 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+762,0.009304,0,0.9961
+Sample  763: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+763,0.009308,0,0.9961
+Sample  764: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+764,0.009308,0,0.9961
+Sample  765: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+765,0.009311,0,0.9961
+Sample  766: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+766,0.009303,0,0.9961
+Sample  767: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+767,0.009314,0,0.9961
+Sample  768: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+768,0.009305,0,0.9961
+Sample  769: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+769,0.009308,0,0.9961
+Sample  770: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+770,0.009308,0,0.9961
+Sample  771: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+771,0.009311,0,0.9961
+Sample  772: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+772,0.009302,0,0.9961
+Sample  773: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+773,0.009314,0,0.9961
+Sample  774: 0.009304 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+774,0.009304,0,0.9961
+Sample  775: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+775,0.009308,0,0.9961
+Sample  776: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+776,0.009308,0,0.9961
+Sample  777: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+777,0.009312,0,0.9961
+Sample  778: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+778,0.009302,0,0.9961
+Sample  779: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+779,0.009314,0,0.9961
+Sample  780: 0.009306 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+780,0.009306,0,0.9961
+Sample  781: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+781,0.009309,0,0.9961
+Sample  782: 0.009307 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+782,0.009307,0,0.9961
+Sample  783: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+783,0.009312,0,0.9961
+Sample  784: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+784,0.009302,0,0.9961
+Sample  785: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+785,0.009314,0,0.9961
+Sample  786: 0.009306 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+786,0.009306,0,0.9961
+Sample  787: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+787,0.009308,0,0.9961
+Sample  788: 0.009306 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+788,0.009306,0,0.9961
+Sample  789: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+789,0.009311,0,0.9961
+Sample  790: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+790,0.009303,0,0.9961
+Sample  791: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+791,0.009314,0,0.9961
+Sample  792: 0.009304 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+792,0.009304,0,0.9961
+Sample  793: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+793,0.009308,0,0.9961
+Sample  794: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+794,0.009308,0,0.9961
+Sample  795: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+795,0.009311,0,0.9961
+Sample  796: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+796,0.009303,0,0.9961
+Sample  797: 0.009313 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+797,0.009313,0,0.9961
+Sample  798: 0.009306 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+798,0.009306,0,0.9961
+Sample  799: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+799,0.009308,0,0.9961
+Sample  800: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+800,0.009308,0,0.9961
+Sample  801: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+801,0.009312,0,0.9961
+Sample  802: 0.009301 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+802,0.009301,0,0.9961
+Sample  803: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+803,0.009314,0,0.9961
+Sample  804: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+804,0.009305,0,0.9961
+Sample  805: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+805,0.009308,0,0.9961
+Sample  806: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+806,0.009309,0,0.9961
+Sample  807: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+807,0.009311,0,0.9961
+Sample  808: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+808,0.009303,0,0.9961
+Sample  809: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+809,0.009314,0,0.9961
+Sample  810: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+810,0.009305,0,0.9961
+Sample  811: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+811,0.009309,0,0.9961
+Sample  812: 0.009307 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+812,0.009307,0,0.9961
+Sample  813: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+813,0.009311,0,0.9961
+Sample  814: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+814,0.009302,0,0.9961
+Sample  815: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+815,0.009314,0,0.9961
+Sample  816: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+816,0.009305,0,0.9961
+Sample  817: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+817,0.009308,0,0.9961
+Sample  818: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+818,0.009308,0,0.9961
+Sample  819: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+819,0.009311,0,0.9961
+Sample  820: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+820,0.009302,0,0.9961
+Sample  821: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+821,0.009314,0,0.9961
+Sample  822: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+822,0.009305,0,0.9961
+Sample  823: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+823,0.009309,0,0.9961
+Sample  824: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+824,0.009308,0,0.9961
+Sample  825: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+825,0.009311,0,0.9961
+Sample  826: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+826,0.009303,0,0.9961
+Sample  827: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+827,0.009314,0,0.9961
+Sample  828: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+828,0.009305,0,0.9961
+Sample  829: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+829,0.009308,0,0.9961
+Sample  830: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+830,0.009308,0,0.9961
+Sample  831: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+831,0.009311,0,0.9961
+Sample  832: 0.009301 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+832,0.009301,0,0.9961
+Sample  833: 0.009315 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+833,0.009315,0,0.9961
+Sample  834: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+834,0.009305,0,0.9961
+Sample  835: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+835,0.009309,0,0.9961
+Sample  836: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+836,0.009309,0,0.9961
+Sample  837: 0.009310 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+837,0.009310,0,0.9961
+Sample  838: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+838,0.009303,0,0.9961
+Sample  839: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+839,0.009314,0,0.9961
+Sample  840: 0.009304 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+840,0.009304,0,0.9961
+Sample  841: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+841,0.009308,0,0.9961
+Sample  842: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+842,0.009309,0,0.9961
+Sample  843: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+843,0.009311,0,0.9961
+Sample  844: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+844,0.009302,0,0.9961
+Sample  845: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+845,0.009314,0,0.9961
+Sample  846: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+846,0.009305,0,0.9961
+Sample  847: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+847,0.009308,0,0.9961
+Sample  848: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+848,0.009308,0,0.9961
+Sample  849: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+849,0.009311,0,0.9961
+Sample  850: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+850,0.009302,0,0.9961
+Sample  851: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+851,0.009314,0,0.9961
+Sample  852: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+852,0.009305,0,0.9961
+Sample  853: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+853,0.009308,0,0.9961
+Sample  854: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+854,0.009309,0,0.9961
+Sample  855: 0.009310 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+855,0.009310,0,0.9961
+Sample  856: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+856,0.009302,0,0.9961
+Sample  857: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+857,0.009314,0,0.9961
+Sample  858: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+858,0.009305,0,0.9961
+Sample  859: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+859,0.009308,0,0.9961
+Sample  860: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+860,0.009308,0,0.9961
+Sample  861: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+861,0.009312,0,0.9961
+Sample  862: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+862,0.009302,0,0.9961
+Sample  863: 0.009315 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+863,0.009315,0,0.9961
+Sample  864: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+864,0.009305,0,0.9961
+Sample  865: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+865,0.009309,0,0.9961
+Sample  866: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+866,0.009309,0,0.9961
+Sample  867: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+867,0.009311,0,0.9961
+Sample  868: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+868,0.009303,0,0.9961
+Sample  869: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+869,0.009314,0,0.9961
+Sample  870: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+870,0.009305,0,0.9961
+Sample  871: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+871,0.009309,0,0.9961
+Sample  872: 0.009307 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+872,0.009307,0,0.9961
+Sample  873: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+873,0.009312,0,0.9961
+Sample  874: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+874,0.009302,0,0.9961
+Sample  875: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+875,0.009314,0,0.9961
+Sample  876: 0.009306 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+876,0.009306,0,0.9961
+Sample  877: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+877,0.009308,0,0.9961
+Sample  878: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+878,0.009308,0,0.9961
+Sample  879: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+879,0.009311,0,0.9961
+Sample  880: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+880,0.009303,0,0.9961
+Sample  881: 0.009315 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+881,0.009315,0,0.9961
+Sample  882: 0.009306 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9844
+882,0.009306,0,0.9844
+Sample  883: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+883,0.009308,0,0.9961
+Sample  884: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+884,0.009308,0,0.9961
+Sample  885: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+885,0.009312,0,0.9961
+Sample  886: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+886,0.009303,0,0.9961
+Sample  887: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9336
+887,0.009314,0,0.9336
+Sample  888: 0.009305 sec | Class: Hypertrophic Cardiomyopathy (HCM)   | Confidence: 0.8594
+888,0.009305,2,0.8594
+Sample  889: 0.009309 sec | Class: Hypertrophic Cardiomyopathy (HCM)   | Confidence: 0.9922
+889,0.009309,2,0.9922
+Sample  890: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+890,0.009309,0,0.9961
+Sample  891: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+891,0.009311,0,0.9961
+Sample  892: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+892,0.009302,0,0.9961
+Sample  893: 0.009313 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+893,0.009313,0,0.9961
+Sample  894: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+894,0.009305,0,0.9961
+Sample  895: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+895,0.009308,0,0.9961
+Sample  896: 0.009307 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+896,0.009307,0,0.9961
+Sample  897: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+897,0.009311,0,0.9961
+Sample  898: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+898,0.009303,0,0.9961
+Sample  899: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+899,0.009314,0,0.9961
+Sample  900: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+900,0.009305,0,0.9961
+Sample  901: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+901,0.009308,0,0.9961
+Sample  902: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+902,0.009308,0,0.9961
+Sample  903: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+903,0.009312,0,0.9961
+Sample  904: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+904,0.009302,0,0.9961
+Sample  905: 0.009315 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+905,0.009315,0,0.9961
+Sample  906: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+906,0.009305,0,0.9961
+Sample  907: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+907,0.009308,0,0.9961
+Sample  908: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+908,0.009308,0,0.9961
+Sample  909: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+909,0.009311,0,0.9961
+Sample  910: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+910,0.009303,0,0.9961
+Sample  911: 0.009315 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+911,0.009315,0,0.9961
+Sample  912: 0.009304 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+912,0.009304,0,0.9961
+Sample  913: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+913,0.009309,0,0.9961
+Sample  914: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+914,0.009308,0,0.9961
+Sample  915: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+915,0.009311,0,0.9961
+Sample  916: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+916,0.009303,0,0.9961
+Sample  917: 0.009313 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+917,0.009313,0,0.9961
+Sample  918: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+918,0.009305,0,0.9961
+Sample  919: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+919,0.009308,0,0.9961
+Sample  920: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+920,0.009308,0,0.9961
+Sample  921: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+921,0.009312,0,0.9961
+Sample  922: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+922,0.009302,0,0.9961
+Sample  923: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+923,0.009314,0,0.9961
+Sample  924: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+924,0.009305,0,0.9961
+Sample  925: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+925,0.009308,0,0.9961
+Sample  926: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+926,0.009308,0,0.9961
+Sample  927: 0.009310 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+927,0.009310,0,0.9961
+Sample  928: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+928,0.009302,0,0.9961
+Sample  929: 0.009313 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+929,0.009313,0,0.9961
+Sample  930: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+930,0.009305,0,0.9961
+Sample  931: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+931,0.009309,0,0.9961
+Sample  932: 0.009307 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+932,0.009307,0,0.9961
+Sample  933: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+933,0.009311,0,0.9961
+Sample  934: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+934,0.009303,0,0.9961
+Sample  935: 0.009313 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+935,0.009313,0,0.9961
+Sample  936: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+936,0.009305,0,0.9961
+Sample  937: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+937,0.009309,0,0.9961
+Sample  938: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+938,0.009308,0,0.9961
+Sample  939: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+939,0.009311,0,0.9961
+Sample  940: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+940,0.009303,0,0.9961
+Sample  941: 0.009313 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+941,0.009313,0,0.9961
+Sample  942: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+942,0.009305,0,0.9961
+Sample  943: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+943,0.009309,0,0.9961
+Sample  944: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+944,0.009308,0,0.9961
+Sample  945: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+945,0.009311,0,0.9961
+Sample  946: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+946,0.009302,0,0.9961
+Sample  947: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+947,0.009314,0,0.9961
+Sample  948: 0.009306 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+948,0.009306,0,0.9961
+Sample  949: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+949,0.009309,0,0.9961
+Sample  950: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+950,0.009309,0,0.9961
+Sample  951: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+951,0.009312,0,0.9961
+Sample  952: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+952,0.009302,0,0.9961
+Sample  953: 0.009313 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+953,0.009313,0,0.9961
+Sample  954: 0.009304 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+954,0.009304,0,0.9961
+Sample  955: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+955,0.009309,0,0.9961
+Sample  956: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+956,0.009309,0,0.9961
+Sample  957: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+957,0.009311,0,0.9961
+Sample  958: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+958,0.009303,0,0.9961
+Sample  959: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+959,0.009314,0,0.9961
+Sample  960: 0.009306 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+960,0.009306,0,0.9961
+Sample  961: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+961,0.009308,0,0.9961
+Sample  962: 0.009307 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+962,0.009307,0,0.9961
+Sample  963: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+963,0.009312,0,0.9961
+Sample  964: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+964,0.009302,0,0.9961
+Sample  965: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+965,0.009314,0,0.9961
+Sample  966: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+966,0.009305,0,0.9961
+Sample  967: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+967,0.009308,0,0.9961
+Sample  968: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+968,0.009308,0,0.9961
+Sample  969: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+969,0.009312,0,0.9961
+Sample  970: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+970,0.009302,0,0.9961
+Sample  971: 0.009315 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+971,0.009315,0,0.9961
+Sample  972: 0.009304 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+972,0.009304,0,0.9961
+Sample  973: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+973,0.009309,0,0.9961
+Sample  974: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+974,0.009308,0,0.9961
+Sample  975: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+975,0.009311,0,0.9961
+Sample  976: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+976,0.009303,0,0.9961
+Sample  977: 0.009313 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+977,0.009313,0,0.9961
+Sample  978: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+978,0.009305,0,0.9961
+Sample  979: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+979,0.009308,0,0.9961
+Sample  980: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+980,0.009308,0,0.9961
+Sample  981: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+981,0.009311,0,0.9961
+Sample  982: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+982,0.009302,0,0.9961
+Sample  983: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+983,0.009314,0,0.9961
+Sample  984: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+984,0.009305,0,0.9961
+Sample  985: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+985,0.009308,0,0.9961
+Sample  986: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+986,0.009309,0,0.9961
+Sample  987: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+987,0.009311,0,0.9961
+Sample  988: 0.009303 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+988,0.009303,0,0.9961
+Sample  989: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+989,0.009314,0,0.9961
+Sample  990: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+990,0.009305,0,0.9961
+Sample  991: 0.009309 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+991,0.009309,0,0.9961
+Sample  992: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+992,0.009308,0,0.9961
+Sample  993: 0.009312 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+993,0.009312,0,0.9961
+Sample  994: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+994,0.009302,0,0.9961
+Sample  995: 0.009314 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+995,0.009314,0,0.9961
+Sample  996: 0.009305 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+996,0.009305,0,0.9961
+Sample  997: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+997,0.009308,0,0.9961
+Sample  998: 0.009308 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+998,0.009308,0,0.9961
+Sample  999: 0.009311 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+999,0.009311,0,0.9961
+Sample 1000: 0.009302 sec | Class: Normal Sinus Rhythm                 | Confidence: 0.9961
+1000,0.009302,0,0.9961
+
+Prediction Complete!
+Total Samples Processed: 1000
+Total Inference Time: 20.000172 seconds
+Average Time per Sample: 0.020000 seconds
+Most Predicted Class: Normal Sinus Rhythm (994 occurrences, 99.4%)
+Average Confidence: 0.9946
+
+Detailed Class Distribution:
+Normal Sinus Rhythm                :  994 (99.4%)
+Hypertrophic Cardiomyopathy (HCM)  :    6 (0.6%)
+
+ECG Classification Finished.
+[0;32mI (20395) main_task: Returned from app_main()[0m

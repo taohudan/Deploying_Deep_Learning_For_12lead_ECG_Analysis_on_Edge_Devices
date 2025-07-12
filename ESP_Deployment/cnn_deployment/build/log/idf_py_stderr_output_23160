@@ -1,0 +1,7 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM16 instead...[0m
+[0;33m--- esp-idf-monitor 1.6.2 on \\.\COM16 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x4201b8f0: esp_nn_conv_s8_filter_aligned_input_padded_esp32s3 at C:/Users/USER/I5_PYTHON/1D_CNN_Final/ESP_Deployment/cnn_deployment/managed_components/espressif__esp-nn/src/convolution/esp_nn_conv_s8_filter_aligned_input_padded_esp32s3.S:154
+[0m
+[0m

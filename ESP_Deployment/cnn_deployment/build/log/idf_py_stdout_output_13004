@@ -1,0 +1,84 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4202bd1e
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x1828
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xce8
+load:0x403cb700,len:0x2eb8
+entry 0x403c8918
+[0;32mI (26) boot: ESP-IDF v5.3.3-439-gc50e49dd0f 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 29 2025 15:13:55[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (31) boot: chip revision: v0.2[0m
+[0;32mI (35) boot: efuse block revision: v1.3[0m
+[0;32mI (39) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3c030020 size=1a42ch (107564) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=0002a454 vaddr=3fc92500 size=05bc4h ( 23492) load[0m
+[0;32mI (130) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=2c5e0h (181728) map[0m
+[0;32mI (164) esp_image: segment 3: paddr=0005c608 vaddr=3fc980c4 size=18eb0h (102064) load[0m
+[0;32mI (186) esp_image: segment 4: paddr=000754c0 vaddr=40374000 size=0e4e4h ( 58596) load[0m
+[0;32mI (211) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (211) boot: Disabling RNG early entropy source...[0m
+[0;32mI (223) cpu_start: Multicore app[0m
+[0;32mI (232) cpu_start: Pro cpu start user code[0m
+[0;32mI (232) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (232) app_init: Application information:[0m
+[0;32mI (235) app_init: Project name:     cnn_deployment[0m
+[0;32mI (240) app_init: App version:      1[0m
+[0;32mI (245) app_init: Compile time:     May 29 2025 15:15:38[0m
+[0;32mI (251) app_init: ELF file SHA256:  429f31dd7...[0m
+[0;32mI (256) app_init: ESP-IDF:          v5.3.3-439-gc50e49dd0f[0m
+[0;32mI (262) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (267) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (272) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (277) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (284) heap_init: At 3FCB7CB0 len 00031A60 (198 KiB): RAM[0m
+[0;32mI (290) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (296) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (302) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (310) spi_flash: detected chip: generic[0m
+[0;32mI (313) spi_flash: flash io: dio[0m
+[0;33mW (317) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (331) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (337) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (345) main_task: Started on CPU0[0m
+[0;32mI (355) main_task: Calling app_main()[0m
+Starting ECG Classification...
+[0;31mE (355) task_wdt: esp_task_wdt_init(515): TWDT already initialized[0m
+Predicting the data........
+..........
+
+Prediction Complete!
+Total Samples Processed: 1000
+Total Inference Time: 10.00 seconds
+Most Predicted Class: Normal Sinus Rhythm (994 occurrences, 99.4%)
+Average Confidence: 0.9946
+
+Detailed Class Distribution:
+Normal Sinus Rhythm                :  994 (99.4%)
+Hypertrophic Cardiomyopathy (HCM)  :    6 (0.6%)
+
+ECG Classification Finished.
+[0;32mI (10385) main_task: Returned from app_main()[0m
+[0;31mE (15365) task_wdt: Task watchdog got triggered. The following tasks/users did not reset the watchdog in time:[0m
+[0;31mE (15365) task_wdt:  - main (CPU 0)[0m
+[0;31mE (15365) task_wdt: Tasks currently running:[0m
+[0;31mE (15365) task_wdt: CPU 0: IDLE0[0m
+[0;31mE (15365) task_wdt: CPU 1: IDLE1[0m
+[0;31mE (15365) task_wdt: Print CPU 0 (current core) backtrace[0m
+
+
+Backtrace: 0x4201D313:0x3FCAF5B0 0x4201D730:0x3FCAF5D0 0x403771F5:0x3FCAF600 0x403782E3:0x3FCBAF40 0x420031CA:0x3FCBAF60 0x4037B3F9:0x3FCBAF80 0x4037A451:0x3FCBAFA0
+
