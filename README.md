@@ -27,7 +27,7 @@ The gold is to enable an **ECG interpretation** on resource-constrained edge dev
 **1. Project Backgroung**\
 This figure shows the full pipline of the project-from collecting ECG data using the PTB database and *MS400 Simulator Machine*, through data segmentation and normalization, to training a 1D-CNN model. The trained model is quantized into TensorFlow Lite formatn and deployed on three platforms: *ESP32-S3, Raspberry Pi,* and *PC*. 
 
-![Figure 2: Project Workflow](image-2.png)
+![Figure 2: Project Workflow](/figure/image-2.png)
 <p align="center"><i>Figure 2: Block diagram of project workflow</i></p>
 
 **2. Project Objective**\
@@ -36,7 +36,7 @@ This study aim to:
   - To quantize and deploy the quantized model on three platforms: ESP32-S3, Raspberry Pi, and PC.
   - To evaluate and compare the platforms based on inference performance, resource usage, and power consumption.
 
-![Figure 3: Block diagram of study objective](image-3.png)
+![Figure 3: Block diagram of study objective](/figure/image-3.png)
 <p align="center"><i>Figure 3: Block diagram of study objective</i></p>
 
 ## Study Background
@@ -45,13 +45,13 @@ The goal of this study background is to critically analyze and synthesize the ex
 **1. Integration of Deep Learning in Cardiovascular Disease Detection**\
 The Figure  explains why deep learning is used in ECG-based cardiovascular disease (CVD) diagnosis. It highlights that deep learning can automatically extract meaningful patterns from raw ECG signals, reducing the need for manual feature engineering. It also introduces key deep learning techniques—such as 1D-CNNs, RNNs, and LSTMs—that are effective for analyzing sequential ECG data and improving diagnostic accuracy.
 
-![Figure 4: Deep Learning in ECG-Based CVD Diagnosis](image-4.png)
+![Figure 4: Deep Learning in ECG-Based CVD Diagnosis](/figure/image-4.png)
 <p align="center"><i>Figure 4: Deep Learning in ECG-Based CVD Diagnosis</i></p>
 
 **2. Neural Network**\
  Neural networks are *adaptive* statistical models based on an analogy with the brain’s structure. They are *adaptive* in that they can learn to estimate the parameters of some population using a small number of exemplars (one or a few) at a time.
 
- ![Figure 5: (a). Physical neuron, (b). Artificial Neural Network](image-5.png)
+ ![Figure 5: (a). Physical neuron, (b). Artificial Neural Network](/figure/image-5.png)
  <p align="center"><i>Figure 5: (a). Physical neuron, (b). Artificial Neural Network</i></p>
 
    **2.1. Activation Function**\
@@ -59,7 +59,7 @@ The Figure  explains why deep learning is used in ECG-based cardiovascular disea
 
    - **Commonlyused activation functions:** The most common activation functions used:
 
-   ![Figure 6: Sigmoid function, Tanh function, RELU function](image-6.png)
+   ![Figure 6: Sigmoid function, Tanh function, RELU function](/figure/image-6.png)
    <p align="center"><i>Figure 6: Sigmoid function, Tanh function, RELU function</i></p>
 
    - **Softmanx:** The softmax step can be seen as a generalized logistic function that takes as input a vector of scores $x \in \real^n$ and output a vector of output a vector of outputs a vector of output of output probalility $p \in \real^n$ through a softmax function at the end of the architecture. It is defined as follows:
@@ -76,7 +76,7 @@ The Figure  explains why deep learning is used in ECG-based cardiovascular disea
    **2.2. One Dimentional Convolutional Neural Network (1D-CNN)**\
    A 1D-CNN (1-Dimensional Convolutional Neural Network) is a type of convolutional neural network designed to process one-dimensional data, such as time-series signals or sequences.
 
-   ![Figure 7: Visualization of 1D-CNN convolutional process on ECG-like sequential input](image.png)
+   ![Figure 7: Visualization of 1D-CNN convolutional process on ECG-like sequential input](/figure/image.png)
    <p align="center"><i>Figure 7: Visualization of 1D-CNN convolutional process on ECG-like sequential input</i></p>
 
    *Figure 7* illustrates how a 1D Convolutional Neural Network (1D-CNN) processes sequential data. In part (a), a kernel of fixed size slides across a one-dimensional input sequence to perform convolution operations, generating output values known as feature maps. These values capture important local patterns in the signal. In part (b), multiple input sequences are processed in parallel. Each sequence is passed through the convolution and pooling layers, which reduce dimensionality while preserving key features. The final outputs are then fed into a fully connected layer for classification. This process allows the model to automatically learn relevant patterns from raw signal data such as ECGs.
@@ -111,7 +111,7 @@ The Figure  explains why deep learning is used in ECG-based cardiovascular disea
 
    The scheme below demonstrates the mapping of the value in FP32 to the INT8 space using symmetric signed quantization with a restricted range, as depicted in *Figure 7*.
 
-   ![Figure 8: Symmetric signed quantization scheme with restricted range of INT8](image-7.png)
+   ![Figure 8: Symmetric signed quantization scheme with restricted range of INT8](/figure/image-7.png)
    <p align="center"><i>Figure 7: Symmetric signed quantization scheme with restricted range of INT8</i></p>
 
    - **Dequantization:** Dequantization converts quantized integers back to floating-point values during inference using the inverse of the quantization formula:
@@ -124,7 +124,7 @@ The Figure  explains why deep learning is used in ECG-based cardiovascular disea
 
    The schema below demonstrates the mapping of the value in FP32 to the INT8 space using symmetric signed quantization with a restricted range, as depicted in *Figure 8*.
 
-   ![Figure 8: Symmetric signed quantization scheme with restricted range of INT8](image-8.png)
+   ![Figure 8: Symmetric signed quantization scheme with restricted range of INT8](/figure/image-8.png)
    <p align="center"><i>Figure 8: Dequantization process in symmetric post-training quantization</i></p>
 
 ## Methodology
@@ -135,7 +135,7 @@ This section shows the procedure of capturing live ECG data from the MS400 ECG s
 - **Step 1: Signal selection and export**\
    Relevent ECG signal from the database were selected and exported in *.dat* format. From the *Figure* show the samples of PTB data.
 
-   ![Figure 9: Sample of PTB Diagnostic ECG Database](image-9.png)
+   ![Figure 9: Sample of PTB Diagnostic ECG Database](/figure/image-9.png)
    <p align="center"><i>Figure 8: Sample of PTB Diagnostic ECG Database</i></p>
 
    1. The *s0035_re.dat* contain the raw binary ECG signal data, typically samples at 100Hz and store the value as 16-bit integers without any headers or metadata.
@@ -143,5 +143,5 @@ This section shows the procedure of capturing live ECG data from the MS400 ECG s
 - **Step 2: Case Conversion for Compatibility**\
    The collected *.dat* files were processed with a case conversion tool to make them compatible with the MS400 ECG Simulator.  *Figure 3.3* illustrates the step-by-step procedure for this conversion process.
 
-   ![Figure 10: Case conversion tool main interface configuration](image-10.png)
+   ![Figure 10: Case conversion tool main interface configuration](/figure/image-10.png)
    <p align="center"><i>Figure 10: Case conversion tool main interface configuration</i></p>
