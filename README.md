@@ -12,7 +12,7 @@
 ## Introduction
 This project aims to bring deep learning–based ECG analysis to low-power edge devices. A custom 1D CNN model was trained to classify 12-lead ECG signals into 8 heart conditions. The model was optimized and deployed on ESP32-S3, Raspberry Pi 4, and PC. It enables real-time, on-device heart monitoring—making AI-powered diagnosis more accessible and efficient in resource-limited settings.
 
-![Figure 1: Deep Learning with Cardiovascular Disease](image-1.png)
+![Figure 1: Deep Learning with Cardiovascular Disease](/figure/image-1.png)
 <p align="center"><i>Figure 1: Deep Learning with Cardiovascular Disease</i></p>
 
 ## Project Overview
